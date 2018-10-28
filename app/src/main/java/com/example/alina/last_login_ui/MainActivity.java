@@ -6,12 +6,14 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.FrameLayout;
 
 public class MainActivity extends AppCompatActivity {
     Button you_do_not;
     Button forgot_password;
     Button sign_up;
     Button log_in;
+    FrameLayout frame_Layout3;
 
 
     @Override
@@ -23,12 +25,14 @@ public class MainActivity extends AppCompatActivity {
         forgot_password = (Button) findViewById(R.id.button_forgot_password);
         sign_up = (Button) findViewById(R.id.button_SIGN_UP);
         log_in = (Button) findViewById(R.id.button_log_in);
+        frame_Layout3 = (FrameLayout) findViewById(R.id.frameLayout3);
 
-        final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.alpha);
+      final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.alpha);
         View.OnClickListener push_you_do_not = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 you_do_not.startAnimation(animAlpha);
+                sign_up.startAnimation(animAlpha);
 
             }
         };
@@ -42,11 +46,21 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        final Animation animScale = AnimationUtils.loadAnimation(this, R.anim.scale);
+      final Animation animScale = AnimationUtils.loadAnimation(this, R.anim.alpha);
         View.OnClickListener push_sign_up = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 sign_up.startAnimation(animScale);
+                you_do_not.startAnimation(animAlpha);
+
+            }
+        };
+
+        final Animation animAlpha2 = AnimationUtils.loadAnimation(this, R.anim.alpha);
+        View.OnClickListener push_frame_Layout3 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                frame_Layout3.startAnimation(animAlpha2);
 
             }
         };
@@ -64,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
         forgot_password.setOnClickListener(push_forgot_password); // присваиваем  обработчик кнопке
         sign_up.setOnClickListener(push_sign_up); // присваиваем  обработчик кнопке
         log_in.setOnClickListener(push_log_in); // присваиваем  обработчик кнопке
+        frame_Layout3.setOnClickListener(push_frame_Layout3); // присваиваем  обработчик кнопке
+
 
 
 

@@ -165,6 +165,56 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
+        <Button
+            android:id="@+id/button_SIGN_UP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:text="@string/SIGN_UP"
+            android:textAllCaps="false"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/text"
+            android:gravity="end|center_vertical"
+
+            android:layout_marginLeft = "@dimen/_30sdp"
+            android:paddingLeft="@dimen/_220sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+            app:layout_constraintVertical_bias="0.272" />
+
+        <Button
+            android:id="@+id/button_You_do_not"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text="@string/You_do_not"
+            android:textAllCaps="false"
+            android:textColor="@color/text"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingRight="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout3"
+            app:layout_constraintVertical_bias="0.272"
+            />
+
     </FrameLayout>
 
     <Button
@@ -206,56 +256,7 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="@+id/button_log_in" />
 
-    <Button
-        android:id="@+id/button_SIGN_UP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/transparent"
-        android:text="@string/SIGN_UP"
-        android:textAllCaps="false"
-        android:ellipsize="end"
-        android:singleLine="true"
-        android:textSize="@dimen/_16sdp"
-        android:textColor="@color/text"
-        android:gravity="right|center_vertical"
-        android:layout_margin="@dimen/_14sdp"
-        android:layout_marginLeft = "@dimen/_30sdp"
-        android:paddingLeft="@dimen/_195sdp"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
-        app:layout_constraintVertical_bias="0.272"
-        android:onClick="onClick"/>
 
-    <Button
-        android:id="@+id/button_You_do_not"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/transparent"
-        android:maxLines="2"
-        android:singleLine="false"
-        android:text="@string/You_do_not"
-        android:textAllCaps="false"
-        android:textColor="@color/text"
-        android:gravity="left|center_vertical"
-        android:textSize="@dimen/_16sdp"
-        android:layout_marginLeft="@dimen/_16sdp"
-        android:ellipsize="end"
-        android:paddingLeft="@dimen/_6sdp"
-        android:paddingRight="@dimen/_20sdp"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
-        app:layout_constraintVertical_bias="0.272"
-       />
 
 
 
