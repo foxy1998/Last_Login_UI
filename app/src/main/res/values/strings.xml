@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Last_Login_UI</string>
+    <string name="Log_In">Log In</string>
+    <string name="Forgot_password"><u>Forgot password?</u></string>
+    <string name="You_do_not">You do not have\nan account?</string>
+    <string name="SIGN_UP"><u>SIGN UP</u></string>
+    <string name="example">example@gmail.com</string>
+    <string name="password">12345678</string>
+
+</resources>
